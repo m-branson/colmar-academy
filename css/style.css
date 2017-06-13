@@ -207,10 +207,11 @@ hgroup {
 @media only screen and (max-width:1080px) {
   .jumbotron {
     font-size: 1rem;
+    padding: 2rem 2rem;
   }
   h1 {
     font-size: 2.25rem;
-    margin: 0.75rem 0;
+    margin: 2rem 0 1rem 0;
   }
 }
 
@@ -218,11 +219,11 @@ hgroup {
   .jumbotron {
     flex-direction: column;
     align-items: flex-start;
-    padding: 2rem 1rem;
+    padding: 2rem 2rem;
   }
   .jumbotron .banner {
     width: 100%;
-    max-height: 10.5rem;
+    max-height: 20rem;
     overflow: hidden;
   }
   hgroup {
@@ -232,6 +233,7 @@ hgroup {
   }
   .button {
     width: 100%;
+    margin: 2rem 0rem 2rem 0rem;
   }
 }
 
@@ -313,9 +315,15 @@ aside .story:hover {
     flex-flow: column;
     padding: 2rem 0;
   }
+
   .focus {
     max-width: 100%;
   }
+
+  .story {
+    border: solid 1px #d8d8d8;
+  }
+
   #highlights aside {
     width: inherit;
     max-width: none;
@@ -433,7 +441,7 @@ aside .story:hover {
 
 @media only screen and (max-width: 660px) {
   #courses h2 {
-    margin: 2rem auto 1rem;
+    margin: 0 auto 2rem;
   }
   #courses {
     padding-bottom: 1rem;
