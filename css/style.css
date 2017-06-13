@@ -47,8 +47,10 @@ p {
 header {
   display: flex;
   justify-content: space-between;
+  align-content: center;
   height: 64px;
   background-color: #ffffff;
+  opacity: .95;
   border-bottom: solid 1px #d8d8d8;
   position: fixed;
   z-index: 30;
@@ -57,7 +59,7 @@ header {
 
 #company-name {
   color: #000000;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   margin-left: 0.5rem;
   font-weight: 300;
 }
@@ -65,7 +67,6 @@ header {
 #logo {
   display: flex;
   align-items: center;
-  font-family: "Open Sans", sans-serif;
 }
 
 #logo span {
@@ -97,7 +98,7 @@ nav li {
 }
 
 nav a:hover {
-  opacity: .90;
+  opacity: .8;
   text-decoration: line-through;
 }
 
@@ -197,6 +198,7 @@ hgroup {
 .button:hover {
   background-color: blue;
   color: white;
+  transition: .25s ease 150ms;
 }
 
 
@@ -291,7 +293,7 @@ aside .story:hover {
 
 .info a {
   color: #blue;
-  margin-top: 3rem;
+  padding-top: 3rem;
 }
 
 .info a:hover {
@@ -371,7 +373,7 @@ aside .story:hover {
   background-color: #ffffff;
 }
 
-#courses h2{
+#courses h2, #thesis h2{
   padding: 2rem 0 0 0;
   width: 100%;
   text-align: center;
@@ -382,16 +384,16 @@ aside .story:hover {
   flex-direction: column;
   width: 25%;
   margin: 2rem;
-  background-color: rgb(98, 159, 182);
+  background-color: #f4f4f4;
 }
 
 .program a {
-  color: white;
+  color: black;
 }
 
 .program:hover {
-  background-color: rgb(105, 122, 159);
-  transition: background-color 0.5s ease-out 100ms;
+  border-top: solid 5px blue;
+  transition: border-top 0.15s ease-out 200ms;
 }
 
 .program img {
@@ -408,12 +410,16 @@ aside .story:hover {
 }
 
 .details h4 {
-  margin: 0.5rem 0;
+  padding: 0.5rem 0;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 .details p {
-  font-weight: 300;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.5;
+  padding: .5rem 0 1.5rem 0;
 }
 
 
@@ -449,17 +455,12 @@ aside .story:hover {
 
 #thesis {
   background-color: #f4f4f4;
+  padding: 0 0 2rem 0;
 }
 
-#thesis div {
+#thesis>div {
   display: flex;
-  padding: 2rem 1.5rem;
-}
-
-#thesis h2{
-  padding: 2rem 0 0 0;
-  width: 100%;
-  text-align: center;
+  padding: 1rem 1.5rem;
 }
 
 #thesis .focus {
@@ -470,7 +471,6 @@ aside .story:hover {
   display: flex;
   flex-flow: column;
   margin-left: 1rem;
-  background-color: transparent;
 }
 
 #thesis h3 {
@@ -482,7 +482,7 @@ aside .story:hover {
 }
 
 
-/*BREAK-POINT Thesis*/
+/*--Thesis Breakpoints--*/
 
 @media only screen and (max-width:1080px) {
   #thesis>div {
@@ -518,14 +518,14 @@ aside .story:hover {
 }
 
 
-/*FOOTER Styling*/
+/*--Footer--*/
 
 footer {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
-  padding: 1rem 1.5rem;
-  border-top: 1px solid rgb(25, 25, 25);
+  padding: 2rem 1.5rem;
+  border-top: 1px solid #d5d5d5;
   font-weight: 300;
 }
 
@@ -533,8 +533,12 @@ footer {
   margin: 0 2rem;
 }
 
+#legal a:hover {
+  text-decoration: line-through;
+}
 
-/*BREAK-POINT Footer */
+
+/*--Footer Breakpoint--*/
 
 @media only screen and (max-width: 600px) {
   footer {
